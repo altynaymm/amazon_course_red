@@ -17,10 +17,10 @@ This project is a landing page designed to advertise educational courses. The si
 
 ## Features
 
-- **Home Page**: Information about the courses, their benefits, and user testimonials.
-- **Pricing**: Detailed descriptions of various pricing plans.
-- **Course Purchase**: Ability to purchase courses through the website.
-- **Responsive Design**: The site is optimized for various devices.
+- **Home Page**: Displays course highlights with a carousel using Swiper.
+- **Course Introduction Modal**: A popup modal featuring an introductory video about the course.
+- **Detailed Course Information**: Provides comprehensive details about course content.
+- **Pricing Information**: Shows available pricing plans. Note that the actual payment functionality is not enabled for security reasons as this is a demo project.
 
 ## Installation and Setup
 
