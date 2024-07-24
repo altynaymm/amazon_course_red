@@ -1,5 +1,5 @@
 # Learning Courses - Landing Page
-<img width="1440" alt="Screenshot 2024-07-24 at 18 12 45" src="https://github.com/user-attachments/assets/db1ee8e5-a609-45c8-b9d5-f962283995ea">
+
 <img width="1434" alt="Screenshot 2024-07-24 at 18 13 03" src="https://github.com/user-attachments/assets/b1c79069-8355-4ce1-b05f-551d5d591d09">
 
 
