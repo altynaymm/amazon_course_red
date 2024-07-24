@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Learning Courses - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a landing page designed to advertise educational courses. The site allows users to explore the available courses and pricing plans, as well as purchase them directly from the page.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**
+- **TypeScript**
+- **SCSS**
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Home Page**: Information about the courses, their benefits, and user testimonials.
+- **Pricing**: Detailed descriptions of various pricing plans.
+- **Course Purchase**: Ability to purchase courses through the website.
+- **Responsive Design**: The site is optimized for various devices.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation and Setup
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+To run the project locally, follow these steps:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+2. Install dependicies:
+   ```bash
+   yarn
+3. Start the project:
+   ```bash
+   yarn dev
+
