@@ -3,13 +3,16 @@
 <img width="1434" alt="Screenshot 2024-07-24 at 18 13 03" src="https://github.com/user-attachments/assets/b1c79069-8355-4ce1-b05f-551d5d591d09">
 
 
-This project is a landing page designed to advertise educational courses. The site allows users to explore the available courses and pricing plans, as well as purchase them directly from the page.
+This project is a landing page designed to advertise educational courses. The site allows users to explore the programm of course and pricing plans, as well as purchase them directly from the page.
 
 ## Tech Stack
 
 - **React**
 - **TypeScript**
 - **SCSS**
+- **Swiper**
+- **react-intersection-observer**
+
 
 ## Features
 
