@@ -1,0 +1,26 @@
+.info-button {
+  font-size: 20px;
+  z-index: 999;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: start;
+  color: $red;
+  font-family: $font-secondary;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+  &--white {
+    color: $white;
+  }
+
+  &--black {
+    color: black;
+  }
+
+  @include md {
+    font-size: 14px;
+  }
+}

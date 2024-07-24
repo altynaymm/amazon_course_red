@@ -1,0 +1,154 @@
+.payment {
+  position: relative;
+  background: $white;
+  padding: 2em 4em;
+  border-radius: 10px;
+  max-width: 515px;
+  width: 100%;
+  font-family: $font-primary;
+
+  @include sm {
+    max-width: 280px;
+    padding: 2em 2em;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: $gray2;
+    @include md {
+      font-size: 18px;
+    }
+  }
+
+  &--white {
+    background-color: $white;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.payment-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    text-align: center;
+    font-family: $font-secondary;
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+.payment-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  color: black;
+  gap: 10px;
+  font-family: $font-secondary;
+
+  @include md {
+    gap: 5px;
+  }
+}
+
+.payment-content-item {
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: $gray5;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  color: $gray2;
+  @include md {
+    font-size: 12px;
+  }
+
+  &--selected {
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  &__radio {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.payment-content-item-container {
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    &--bold {
+      font-weight: 600;
+    }
+  }
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+  font: inherit;
+  color: $gray2;
+  width: 21px;
+  height: 21px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+input[type='radio']::before {
+  content: '';
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: $gray2;
+}
+
+input[type='radio']:checked::before {
+  transform: scale(1);
+}
+
+.payment-box {
+  font-family: $font-secondary;
+  display: flex;
+  flex-direction: column;
+
+  height: 300px;
+  justify-content: center;
+
+  &__title {
+    color: $gray2;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 30px;
+    font-weight: 700;
+    color: $gray2;
+    text-align: center;
+    color: $red;
+  }
+}

@@ -1,0 +1,120 @@
+.benefits {
+  box-sizing: border-box;
+  background-color: $gray2;
+  border-radius: $desktopRadius;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @include sm {
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: $mobileRadius;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 9999;
+
+    @include sm {
+      right: 0;
+      top: 0;
+      left: unset;
+    }
+  }
+
+  &__image {
+    max-width: 1200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: $white;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @include md {
+      font-size: 30px;
+    }
+  }
+}
+
+.benefits-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.benefits-block-section {
+  max-width: 660px;
+  font-family: $font-secondary;
+  font-weight: 500;
+  padding: 40px 30px;
+  background-color: $white;
+  border-radius: 57px 57px 57px 0px;
+
+  @include sm {
+    padding: 20px 15px;
+    border-radius: 30px 30px 30px 0px;
+  }
+
+  &__title {
+    font-size: 26px;
+    margin: 0;
+
+    @include md {
+      font-size: 14px;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+
+    @include md {
+      font-size: 12px;
+    }
+
+    &--highlight {
+      color: $red;
+    }
+  }
+
+  .benefits-block-section-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .icon {
+    font-family: $font-secondary;
+    font-weight: 400;
+    padding: 18px 18px;
+    border-radius: 60px;
+    background-color: $gray5;
+    font-size: 18px;
+  }
+}

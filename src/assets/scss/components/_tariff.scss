@@ -1,0 +1,150 @@
+.tariff {
+  box-sizing: border-box;
+  background-color: $red;
+  border-radius: $desktopRadius;
+  padding: 3rem 0;
+  margin-top: 80px;
+
+  @include sm {
+    border-radius: $mobileRadius;
+  }
+
+  &__title {
+    margin: 0 0 50px;
+    color: $white;
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @include md {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tariff-body {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+  @include md {
+    flex-direction: column;
+  }
+}
+
+.tariff-card {
+  background-color: $white;
+  padding: 2em 3em;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(2) {
+    background-color: $gray2;
+    .tariff-card-header__name {
+      background-color: $lime;
+      color: $gray1;
+    }
+    .tariff-card-services__item {
+      color: $lime;
+      border-bottom: 1px solid $lime;
+    }
+
+    .tariff-card__price {
+      color: $lime;
+    }
+  }
+}
+
+.tariff-card__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $red;
+  font-weight: 700;
+  gap: 6px;
+
+  &--old {
+    text-decoration: line-through;
+    font-size: 24px;
+    opacity: 0.5;
+  }
+
+  &--new {
+    font-size: 40px;
+  }
+}
+
+.tariff-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    min-width: 290px;
+    max-height: 330px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    padding: 14px 20px 14px 20px;
+    border-radius: 30px;
+    background-color: $red;
+    font-weight: 700;
+    font-size: 30px;
+    color: $white;
+    bottom: 0;
+    transform: rotate(355deg);
+    position: relative;
+
+    @include sm {
+      font-size: 20px;
+    }
+
+    &__sub {
+      font-weight: 500;
+      position: absolute;
+      background-color: $white;
+      right: -20px;
+      font-size: 14px;
+      top: -20px;
+      transform: rotate(10deg);
+      border-radius: 45px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+.tariff-card-services {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    border-bottom: solid 1px $red;
+    padding: 12px 0;
+    font-size: 16px;
+    font-family: $font-secondary;
+    font-weight: 500;
+
+    &--strikethrough {
+      text-decoration: line-through;
+      opacity: 0.5;
+      color: $red;
+    }
+  }
+}

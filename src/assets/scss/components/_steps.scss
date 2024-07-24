@@ -1,0 +1,64 @@
+.steps {
+  margin: 100px 0;
+}
+
+.steps-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__title {
+    font-size: 70px;
+    color: $red;
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @include md {
+      font-size: 36px;
+      text-align: center;
+    }
+    @include xs {
+      font-size: 34px;
+    }
+  }
+}
+
+.steps-header-navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.swiper-button {
+  &__next {
+    align-self: center;
+    cursor: pointer;
+    background-color: $pink;
+    padding: 16px 40px;
+    border-radius: 50px;
+    transition: transform 0.2s;
+    &:active {
+      transform: translateY(5px);
+    }
+  }
+
+  &__prev {
+    align-self: center;
+    cursor: pointer;
+    background-color: $pink;
+    padding: 16px 40px;
+    border-radius: 50px;
+    transform: rotate(180deg);
+    transition: transform 0.2s;
+    &:active {
+      transform: translateY(5px) rotate(180deg);
+    }
+  }
+}

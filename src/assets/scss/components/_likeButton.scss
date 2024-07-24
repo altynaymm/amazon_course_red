@@ -1,0 +1,30 @@
+.like-button {
+  cursor: pointer;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-secondary;
+  font-weight: 300;
+  padding: 18px 18px;
+  border-radius: 60px;
+  background-color: $gray5;
+  font-size: 18px;
+  gap: 5px;
+
+
+}
+
+.like-button__count {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .like-button--animating .like-button__count {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+
+  .like-button:hover {
+    color: $red;
+
+  }

@@ -1,0 +1,37 @@
+@import 'font';
+@import 'mixin';
+@import 'variables';
+
+@import 'components/header';
+@import 'components/button';
+@import 'components/welcomePage';
+@import 'components/arrow';
+@import 'components/loadingPage';
+@import 'components/video';
+@import 'components/main';
+@import 'components/benefits';
+@import 'components/carousel.scss';
+@import 'components/steps.scss';
+@import 'components/speakers';
+@import 'components/speakersCard';
+@import 'components/highlights';
+@import 'components/highlightsContent';
+@import 'components/modal';
+@import 'components/moreInfoButton';
+@import 'components/timer';
+@import 'components/tariff';
+@import 'components/footer';
+@import 'components/likeButton';
+@import 'components/social';
+@import 'components/videoModal';
+@import 'components/paymentModal';
+@import 'components/fadeInSection';
+
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 400;
+}

@@ -1,0 +1,39 @@
+.timer {
+  margin: 80px 0 0;
+  background-color: $lime;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include md {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $font-secondary;
+    font-weight: 600;
+    font-size: 28px;
+
+    @include md {
+      font-size: 18px;
+    }
+
+    &--red {
+      color: $red;
+    }
+  }
+
+  &__time {
+    font-weight: 900;
+    font-size: 70px;
+    color: $red;
+
+    @include md {
+      font-size: 50px;
+    }
+  }
+}

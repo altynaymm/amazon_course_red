@@ -1,0 +1,62 @@
+.highlights-content {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 26px;
+  position: relative;
+  overflow: hidden;
+  min-width: 170px;
+  min-height: 250px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: red;
+  
+
+  &--long {
+    width: 50%;
+    background-color: $gray4;
+    color: $white;
+  }
+
+  &--red {
+    background-color: $red;
+    color: $white;
+  }
+
+  &--black {
+    color: black;
+  }
+
+  @include md {
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  p {
+    margin: 0;
+    z-index: 999;
+  }
+}
+
+
+
+.highlights-content__image {
+  max-width: 300px;
+  display: flex;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+
+.highlights-content__background {
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  transform: rotate(270deg);
+}

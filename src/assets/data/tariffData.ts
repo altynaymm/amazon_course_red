@@ -1,0 +1,51 @@
+import EconomTariffImg from '@img/economtariff.webp';
+import PlusTariffImg from '@img/plustariff.webp';
+
+export const tariffs = [
+    {
+        name: "Движ Париж",
+        oldPrice: 330,
+        price: 290,
+        img: EconomTariffImg,
+        primaryColor: '#F13010',
+        secondaryColor: '#FFFFFF',
+        subtitle: '',
+        services: [
+            { name: "Удобная платформа для занятий с видео", included: true },
+            { name: "Доступ к телеграм каналу с лайфхаками", included: true },
+            { name: "Презентации и инструкции", included: true },
+            { name: "Шаблон таблицы управления товарами", included: true },
+            { name: "Личный менеджер", included: true },
+            { name: "Групповые видеозвонки", included: true },
+            { name: "Список товаров", included: true },
+            { name: "Контакты поставщиков", included: true },
+            { name: "Контакты логистов", included: true },
+            { name: "Персональный звонок со спикерами", included: false },
+            { name: "Чат со спикерами", included: false },
+            { name: "Дополнительный урок про запуск рекламы", included: false },
+        ],
+    },
+    {
+        name: "Движ Париж",
+        oldPrice: 520,
+        price: 470,
+        img: PlusTariffImg,
+        subtitle: 'Plus',
+        primaryColor: '#dcff7c',
+        secondaryColor: '#2A2A2A',
+        services: [
+            { name: "Удобная платформа для занятий с видео", included: true },
+            { name: "Доступ к телеграм каналу с лайфхаками", included: true },
+            { name: "Презентации и инструкции", included: true },
+            { name: "Шаблон таблицы управления товарами", included: true },
+            { name: "Личный менеджер", included: true },
+            { name: "Групповые видеозвонки", included: true },
+            { name: "Список товаров", included: true },
+            { name: "Контакты поставщиков", included: true },
+            { name: "Контакты логистов", included: true },
+            { name: "Персональный звонок со спикерами", included: true },
+            { name: "Чат со спикерами", included: true },
+            { name: "Дополнительный урок про запуск рекламы", included: true },
+        ],
+    },
+];

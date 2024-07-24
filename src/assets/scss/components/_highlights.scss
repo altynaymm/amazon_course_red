@@ -1,0 +1,68 @@
+.highlights {
+  width: 100%;
+ 
+
+  &__title {
+    color: $red;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @include md {
+      font-size: 36px;
+    }
+
+    @include xs {
+      font-size: 34px;
+    }
+  }
+}
+
+.highlights-body {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-secondary;
+  font-weight: 700;
+  gap: 15px;
+
+  @include sm {
+    align-items: center;
+  }
+}
+
+.highlights-body-box {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  &--vertical {
+    gap: 15px;
+    @include sm {
+      flex-direction: column;
+    }
+  }
+}
+
+.highlights-item {
+  display: flex;
+  flex-direction: row;
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  &--horizontal {
+    @include sm {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+
+  &--double {
+    @include sm {
+      flex-direction: row;
+    }
+  }
+}

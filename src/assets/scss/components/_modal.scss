@@ -1,0 +1,57 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding: 1em 0;
+  
+  &__button {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.modal-content {
+  background: $white;
+  padding: 3em 4em;
+  border-radius: 10px;
+  max-width: 515px;
+  width: 100%;
+  position: relative;
+  
+
+  @include sm {
+    max-width: 200px;
+  }
+
+  &__title {
+    font-size: 30px;
+    margin: 0;
+    color: $red;
+
+    @include sm {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    font-family: $font-secondary;
+    font-size: 18px;
+    color: $red;
+
+    @include sm {
+      font-size: 14px;
+    }
+  }
+}

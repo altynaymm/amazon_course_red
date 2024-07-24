@@ -1,0 +1,40 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    margin: 0;
+    color: $red;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include sm {
+      font-size: 20px;
+    }
+
+    &__sub {
+      font-size: 65px;
+
+      @include sm {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__image {
+    animation: rotate 3s linear infinite;
+  }
+}
