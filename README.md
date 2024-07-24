@@ -1,4 +1,7 @@
 # Learning Courses - Landing Page
+<img width="1440" alt="Screenshot 2024-07-24 at 18 12 45" src="https://github.com/user-attachments/assets/db1ee8e5-a609-45c8-b9d5-f962283995ea">
+<img width="1434" alt="Screenshot 2024-07-24 at 18 13 03" src="https://github.com/user-attachments/assets/b1c79069-8355-4ce1-b05f-551d5d591d09">
+
 
 This project is a landing page designed to advertise educational courses. The site allows users to explore the available courses and pricing plans, as well as purchase them directly from the page.
 
@@ -21,7 +24,7 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git@github.com:altynaymm/amazon_course_red.git
 2. Install dependicies:
    ```bash
    yarn
